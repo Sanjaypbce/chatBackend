@@ -1,0 +1,21 @@
+// filepath: /c:/myfolder/chatzy/BACKEND/render.yaml
+services:
+  - type: web
+    name: chatzy-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: MongoDb_Url
+        value: "mongodb+srv://wwwsanjayijk07:xaZYk6xBacA4LabQ@cluster0.ek565j8.mongodb.net/"
+      - key: nodemailer_user
+        value: "www.sanjayijk07@gmail.com"
+      - key: nodemailer_pass
+        value: "kvioptcnkvukloty"
+      - key: signup_Secret_Token
+        value: "guvimernstack"
+      - key: login_secret_Token
+        value: "greatlearning"
+      - key: Redis_End_pont
+        value: "redis://:gHKfI3WMK9ycD4R6yrd7k0bEUnOCjf3G@redis-14851.c277.us-east-1-3.ec2.redns.redis-cloud.com:14851"
